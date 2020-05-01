@@ -1,0 +1,22 @@
+Step 1:start your redhat 8 os in virtual box
+Step 2:install docker-ce by using yum command.
+Step 3:"docker pull os_name"-:to download os image file
+Step 4:"docker run - i - t - --name project --network bridge
+ centos:latest" -: to install docker image in container.
+Step 5:"yum install python3" to install python3
+Step 6:"yum install httpd" to install apache Web server
+Step 7:"yum install net-tools" to install net tools
+Step 8:"cd /var/www/html" to go to Web server folder
+Step 9:"touch index.html" to create a html file
+Step 10:cat>index.html"to write the html code in it
+ and then save it.
+Step 11:"cd" to go back to home
+Step 12:"vi /root/.bashrc"
+Step 13:"rm -rf /var/run/httpd/*
+/usr/sbin/httpd" this is to start web server services.
+Step 14:"curl 10.0.2.15" to check web server
+Step 15:"mkdir docker_project"
+Step 16:"cd docker_project"
+Step 17:"vim project.py" here is python3 n code written
+Step 18:"python3 project.py"to run the python program.
+Step 19:exit

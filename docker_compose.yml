@@ -1,0 +1,26 @@
+version: 1.0
+     project:
+          image: final_project:1
+          volumes:
+               -docker_vol: /var/lib/final_project
+          restart: always
+          environment:
+               CENTOS_ROOT_PASSWORD: tony
+               CENTOS_USER: aniket
+               CENTOS_PASSWORD: ani
+     
+     project2:
+          image: final_project:2
+          volumes:
+               -docker_vol_new: /var/www/html
+          restart: always
+          port:
+               -10.0.2.15
+          environment:
+               CENTOS_ROOT_PASSWORD: tony
+               CENTOS_USER: aniket
+               CENTOS_PASSWORD: ani
+              
+volumes:
+     docker_vol:
+     docker_vol_new:
